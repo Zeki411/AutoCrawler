@@ -81,3 +81,12 @@ You can make your own crawler by changing collect_links.py
 # Issues
 
 As google site consistently changes, please make issues if it doesn't work.
+
+# Notes
+
+Google XPath element can be changed sometimes, please check it before run.
+For instance, the line of code in collect_links.py: 
+```
+photo_grid_boxes = self.browser.find_elements(By.XPATH, '//div[@class="isv-r PNCib ViTmJb BUooTd"]')
+```
+
